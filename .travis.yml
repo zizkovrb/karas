@@ -5,4 +5,5 @@ branches:
   only:
     - travis
 before_install:
+ - sudo apt-get update
  - sudo apt-get install php5-dev
