@@ -20,7 +20,7 @@ static int karas_ub_write(const char *str, unsigned int strlen) {
 	return strlen;
 }
 
-static int karas_log_message(char * message) {
+static void karas_log_message(char * message) {
 	errors++;
 }
 
@@ -28,7 +28,6 @@ VALUE method_eval(VALUE self, VALUE php_code) {
 	char *php_c_code;
 	int argc = 1;
 	char *argv[2] = { "Karas", NULL };
-	int ret = 1;
 	buffer = NULL;
 	errors = 0;
 
