@@ -1,5 +1,4 @@
 #include <ruby.h>
-#include <string.h>
 #include <sapi/embed/php_embed.h>
 
 VALUE Karas = Qnil;
